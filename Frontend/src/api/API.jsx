@@ -6,8 +6,12 @@ const api = axios.create({
 })
 
 api.interceptors.request.use((config) => {
-  const token = localStorage.getItem('token')
-  if (token) config.headers.Authorization = `Bearer ${token}`
+  const raw = localStorage.getItem('cafe-storage')
+  if (raw) {
+    const { state } = JSON.parse(raw)
+    const token = state?.token
+    if (token) config.headers.Authorization = `Bearer ${token}`
+  }
   return config
 })
 
