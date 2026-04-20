@@ -27,6 +27,7 @@ const cafeStore = (set, get) => ({
         set({
             user: res.data.user
         })
+        localStorage.setItem('token', res.data.access_token)
         return res
     },
     actionRegister: async (formData) => {
@@ -36,13 +37,17 @@ const cafeStore = (set, get) => ({
     actionLogout: async () => {
         await logout()
         set({ user: null })
+        localStorage.removeItem('token')
     },
     checkAuth: async () => {
         try {
+            const token = localStorage.getItem('token')
+            if (!token) return set({ user: null })
             const res = await getMe()
             set({ user: res.data })
         } catch {
             set({ user: null })
+            localStorage.removeItem('token')
         }
     },
     fetchMenuByCategory: async () => {
