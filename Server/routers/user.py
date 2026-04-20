@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from Server.database.database import get_db
 from Server.schemas.schemas import UserResponse, UpdateRoleUser, UserListResponse
@@ -31,14 +31,14 @@ def get_user_id(
     return get_user(db, user_id)
 
 
-@router.patch("/{user_id}/role", response_model=UserResponse)
-def chang_role(
-    user_id: int,
-    data: UpdateRoleUser,
-    db: Session = Depends(get_db),
-    admin: User = Depends(require_admin),
-):
-    return update_user_role(db, user_id, data.role)
+@router.patch("/set-admin/{user_id}")
+def set_admin(user_id: int, db: Session = Depends(get_db)):
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    user.role = "admin"
+    db.commit()
+    return {"message": "Updated to admin"}
 
 
 @router.delete("/{user_id}")
