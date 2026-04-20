@@ -1,0 +1,34 @@
+.header-map {
+    background-color: #F5F5DC;
+    min-height: 100vh;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 1rem;
+}
+
+.main-map {
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-map{
+    background-color: #F5F5DC;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

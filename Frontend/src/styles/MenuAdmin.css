@@ -1,0 +1,112 @@
+.con-form-input-menu-admin {
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    /* justify-content: center; */
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.tile-menu-admin{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.title-crate-menu{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.con-input-menu-admin {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.input-menu{
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    height: 30px;
+}
+
+.input-img-menu{
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.label-creat-menu{
+    margin-bottom: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn-submit-menu{
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: antiquewhite;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.btn-submit-menu:active{
+    transform: scale(0.95);
+    transition: 0.5s;
+}
+
+.input-menu-category{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-table-menu-admin{
+    background-color: aliceblue;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.head-table-menu-admin{
+    background-color: black;
+    color: antiquewhite;
+    height: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.p-table-menu-admin{
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2px;
+}
+
+.btn-remove-menu{
+    font-size: 1.2rem;
+    border: none;
+    background-color: aliceblue;
+    cursor: pointer;
+    color: red;
+}
+
+.btn-update-menu{
+    background-color: black;
+    border: none;
+    color: antiquewhite;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 836px){
+ .tile-menu-admin{
+    margin-left: 5rem;
+ }
+}

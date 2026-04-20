@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header-menu {
+    background-color: #F5F5DC;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+
+.main-menu {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-card-menu {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.con-card-menu {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    min-width: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.img-wrapper {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background-color: rgb(193, 193, 193);
+}
+
+.img-menu {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.name-list-menu {
+    margin-bottom: 5px;
+}
+
+.description-menu {
+    font-size: 13px;
+    color: #666;
+    flex: 1;
+    margin: 0 0 8px;
+}
+
+.price-menu {
+    margin: 0;
+    font-weight: bold;
+}
+
+.con-s-menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.input-s-menu {
+    display: flex;
+    gap: 5px;
+}
+
+.s-list-menu {
+    width: 100%;
+    max-width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(59, 59, 59);
+    margin-left: 10px;
+    padding: 0 5px;
+}
+
+.btn-sub-mit-s-menu {
+    padding: 5px;
+    font-size: 1rem;
+    height: 30px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.category-list-menu {
+    width: 100%;
+    max-width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: #F5F5DC;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main-prev-next-menu {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+}
+
+.btn-next-menu,
+.btn-prev-menu {
+    background-color: black;
+    color: #F5F5DC;
+    border: none;
+    width: 100%;
+    max-width: 100px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.footer-menu {
+    background-color: #F5F5DC;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.modal-card {
+    background: #fff;
+    width: 100%;
+    max-width: 450px;
+    overflow: hidden;
+    position: relative;
+    padding: 5px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.modal-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.modal-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.modal-name {
+    margin: 0 0 8px;
+}
+
+.modal-description {
+    color: #666;
+    font-size: 14px;
+    margin: 0 0 12px;
+}
+
+.modal-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+}

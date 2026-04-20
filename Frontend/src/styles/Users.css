@@ -1,0 +1,81 @@
+.main-table-user {
+    background-color: aliceblue;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.tile_user {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head-user {
+    background-color: black;
+    color: antiquewhite;
+    height: 40px;
+}
+
+.title-user {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.p-user {
+    border: 1px solid black;
+    text-align: center;
+    height: 30px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.select-role-user{
+    border: none;
+    background-color: black;
+    color: antiquewhite;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn-remove-user{
+    padding: 3px;
+    font-size: 1rem;
+    border: none;
+    width: 50px;
+    background-color: aliceblue;
+    color: red;
+    cursor: pointer;
+}
+
+.main-prev-next-user{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn-prev-user,
+.btn-next-user{
+    border: none;
+    padding: 5px;
+    width: 100px;
+    background-color: black;
+    color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-prev-user,
+.btn-next-user:hover{
+    background-color: rgb(47, 47, 47);
+}
+
+.page-user{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (max-width: 836px){
+ .tile_user{
+    margin-left: 5rem;
+ }
+}
