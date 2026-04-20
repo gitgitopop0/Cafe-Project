@@ -5,13 +5,8 @@ import useCafeStore from '../store/cafe_store'
 const ProtectedRoute = ({ children }) => {
     const user = useCafeStore(state => state.user)
 
-    if (!user) {
-        return <Navigate to="/login" replace />
-    }
-
-    if (user.role !== "admin") {
-        return <Navigate to="/" replace />
-    }
+    if (!user) return <Navigate to="/login" replace />
+    if (user.role !== "admin") return <Navigate to="/" replace />
 
     return children
 }

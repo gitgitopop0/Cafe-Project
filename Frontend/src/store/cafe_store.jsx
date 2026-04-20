@@ -40,15 +40,15 @@ const cafeStore = (set, get) => ({
         localStorage.removeItem('token')
     },
     checkAuth: async () => {
-        try {
-            const token = localStorage.getItem('token')
-            if (!token) return set({ user: null })
-            const res = await getMe()
-            set({ user: res.data })
-        } catch {
-            set({ user: null })
-            localStorage.removeItem('token')
-        }
+        // try {
+        //     const token = localStorage.getItem('token')
+        //     if (!token) return set({ user: null })
+        //     const res = await getMe()
+        //     set({ user: res.data })
+        // } catch {
+        //     set({ user: null })
+        //     localStorage.removeItem('token')
+        // }
     },
     fetchMenuByCategory: async () => {
         const res = await getMenuByCategory()
