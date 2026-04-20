@@ -19,6 +19,7 @@ app.add_middleware(
         "http://localhost:5173",
         "https://cafe-fronend.vercel.app",
         "https://cafe-fronend-fqnyhyw96-buraphas-projects-9e8b659d.vercel.app",
+        "https://cafe-fronend-git-main-buraphas-projects-9e8b659d.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
