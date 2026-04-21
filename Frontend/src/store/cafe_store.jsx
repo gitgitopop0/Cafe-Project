@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
-import { login, register, logout, getMe } from '../server/auth.api'
+import { login, register, logout } from '../server/auth.api'
 import { getMenuByCategory, userToday, featured } from '../server/admin.api'
 import { getMenu, listMenu, removeMenu, searchMenu } from '../server/menu.api'
 import { category, crateCategory, updateCategory, removeCategory } from '../server/category.api'
@@ -40,17 +40,6 @@ const cafeStore = (set, get) => ({
         await logout()
         set({ user: null, token: null })
         localStorage.removeItem('token')
-    },
-    checkAuth: async () => {
-        // try {
-        //     const token = localStorage.getItem('token')
-        //     if (!token) return set({ user: null })
-        //     const res = await getMe()
-        //     set({ user: res.data })
-        // } catch {
-        //     set({ user: null })
-        //     localStorage.removeItem('token')
-        // }
     },
     fetchMenuByCategory: async () => {
         const res = await getMenuByCategory()
