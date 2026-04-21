@@ -1,2 +1,2 @@
-FrontEnd:https://cafe-fronend-git-main-buraphas-projects-9e8b659d.vercel.app/
+FrontEnd:https://cafe-fronend.vercel.app/
 Backend: https://cafe-backends-bvaz.onrender.com
