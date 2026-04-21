@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navigate } from 'react-router-dom'
-import useCafeStore from '../store/cafeStore'
+import useCafeStore from '../store/cafe_store'
 
 const ProtectedRoute = ({ children, requiredRole }) => {
     const user = useCafeStore((state) => state.user)
